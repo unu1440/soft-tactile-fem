@@ -13,7 +13,7 @@ Simulation only. There is no comparison with a real sensor.
 
 ## 현황 (Status)
 
-- [ ] SOFA 설치
+- [x] SOFA 설치 (Windows, `import Sofa`와 `runSofa` 실행 확인)
 - [ ] Neo-Hookean 블록 압축 장면
 - [ ] 깊이별 마커 변위와 반발력 기록
 - [ ] μ, α를 하나씩 바꾼 파라미터 스윕
@@ -25,11 +25,17 @@ Simulation only. There is no comparison with a real sensor.
 ## 환경 (Environment)
 
 - Windows 11, RTX 3060 Ti 8GB, RAM 16GB
-- SOFA 버전: 설치 후 기록
+- SOFA v26.06.00 (Win64 zip): `D:\tools\SOFA_v26.06.00`
+- Python 3.12.16, numpy 2.5.4, scipy 1.18.1, pybind11 2.12.0: `D:\tools\envs\sofa`
 
 ## 실행 (How to run)
 
-설치가 끝나면 순서를 적는다.
+PowerShell에서 환경을 잡고 실행한다. Set the environment first, then run a script.
+
+```powershell
+. .\scripts\env.ps1
+python src\your_script.py
+```
 
 ## 결과 (Results)
 
